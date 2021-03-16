@@ -2,6 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <xacro:macro name="m_link" params="name mass ixx ixy ixz iyy iyz izz origin_xyz origin_rpy scale_xyz pathfile">
+
     <link name="${name}">
     	<inertial>
         <mass value="${mass}" />
@@ -32,6 +33,7 @@
         <parent link="${parent}"/>
         <child link="${child}"/>
     </joint>
+    
   </xacro:macro>
 
 
