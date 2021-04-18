@@ -8,9 +8,11 @@ Panels:
         - /Status1
         - /RobotModel1
         - /RobotModel1/Links1
+        - /RobotModel1/Links1/camera_link1
         - /RobotModel1/Links1/robot_arm_link21
         - /RobotModel1/Links1/robot_arm_link21/Position1
         - /TF1
+        - /TF1/Frames1
       Splitter Ratio: 0.5
     Tree Height: 565
   - Class: rviz/Selection
@@ -65,6 +67,10 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        camera_link:
+          Alpha: 1
+          Show Axes: true
+          Show Trail: false
         robot_arm_base_link:
           Alpha: 1
           Show Axes: false
@@ -75,12 +81,32 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        robot_arm_link3:
+        robot_arm_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robot_arm_link5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robot_arm_link6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        robot_arm_link7:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         robot_arm_turning_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        support_part:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -96,15 +122,25 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        camera_link:
+          Value: true
         robot_arm_base_link:
           Value: true
         robot_arm_link2:
           Value: true
-        robot_arm_link3:
+        robot_arm_link4:
+          Value: true
+        robot_arm_link5:
+          Value: true
+        robot_arm_link6:
+          Value: true
+        robot_arm_link7:
           Value: true
         robot_arm_turning_mount:
           Value: true
-      Marker Scale: 0.0500000007
+        support_part:
+          Value: true
+      Marker Scale: 0.0399999991
       Name: TF
       Show Arrows: false
       Show Axes: true
@@ -113,8 +149,14 @@ Visualization Manager:
         robot_arm_base_link:
           robot_arm_turning_mount:
             robot_arm_link2:
-              robot_arm_link3:
-                {}
+              robot_arm_link4:
+                robot_arm_link5:
+                  robot_arm_link6:
+                    robot_arm_link7:
+                      camera_link:
+                        {}
+          support_part:
+            {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -142,25 +184,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.0567510016
+      Distance: 0.431710541
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.00705433311
-        Y: -0.00244088192
-        Z: 0.00496025011
+        X: -0.0745598972
+        Y: -0.0565230399
+        Z: 0.26136896
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.345398456
+      Pitch: 0.765398264
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.31855226
+      Yaw: 0.728557706
     Saved:
       - Class: rviz/Orbit
         Distance: 0.0774756297
